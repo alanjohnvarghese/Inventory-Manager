@@ -1,52 +1,102 @@
+<!DOCTYPE html>
 <html>
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
-<title>Welcome Page</title>
-<style> 
 
-html { 
-    background: url(blurbg.jpg) no-repeat center fixed; 
-    background-size: cover;
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: url(blurbg.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
 
-div{
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact {
+  background-color: #4CCF70;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+button {
     background-color: #4CAF50;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    color: white;
-    padding: 15px 32px;
+    color: black;
+    border: 2px solid #555555;
+    padding: 8px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 225px 525px;  	
-
-
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+button a {
+  color: black;
+  font-size: 18px;
+}
 
 </style>
 
-<body>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+	<title>Centre For Innovation</title>
 
-<div>
-<p>
-<h3>
-      Welcome to CFI Inventory Manager
-</h3>
-</br>
-<h4>
-   <a href="../signup"> Create User </a>
-</h4>
+</head>
 
+<div class="container">
+  <div id="contact">
+    <center>
+      <img src="header51.png" width="100%"><br><br>
 
-<h4>
-   <a href="../login"> Login </a>
+      <h2>Welcome to CFI Inventory Manager</h2></br><br>
 
-</h4>
-</p>
+      <button><a href="./signup.html">Create User</a></button>
+
+      <button><a href="./login.html">Login</a></button>
+    </center>
+  </div>
 </div>
 
 </body>
