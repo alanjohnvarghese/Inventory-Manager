@@ -1,0 +1,59 @@
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<center><h1>{{u|title}}</h1>
+
+<p>
+{% if tu %}
+The following are the tools taken by {{u|title}}
+<ul>{% for i in tu%}
+<li>{{ i.name|title}}</li>
+{% endfor %}
+</ul>
+{% else %}
+You haven't take any tools currently
+{% endif %}
+</p>
+
+<br>
+<p>
+{% if to %}
+The following are the tools taken by other users
+<table style ="width:40%">
+<tr>
+    <th>Tool Name</th>
+    <th>User Name</th>
+</tr>
+{% for i in to%}
+<tr>
+	<td>{{i.name|title}}</td>
+	<td>{{i.current|title}}</td>
+</tr>
+{% endfor %}
+</table>
+{% else %}
+No one has taken any tools currently
+{% endif %}
+</p>
+
+<br>
+
+<p>
+{% if ta %}
+The following are the tools available now
+<ul>{% for i in ta%}
+<li>{{ i.name|title}}</li>
+{% endfor %}
+</ul>
+{% else %}
+No tools are available now
+{% endif %}
+</p>
+
+
+</center>
+
+<a href='../'>Log Out</a>
+ 
