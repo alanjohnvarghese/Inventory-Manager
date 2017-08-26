@@ -1,0 +1,61 @@
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  background: url(tool3.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+#grad1 {
+    min-height: 200px;
+    border: 1px solid lightgrey;
+    background: lightgrey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, lightgrey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, lightgrey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, lightgrey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, lightgrey); /* Standard syntax (must be last) */
+}
+
+#grad2 {
+    min-height: 200px;
+    border: 1px solid lightgrey;
+    background: -webkit-linear-gradient(lightgrey, grey, lightgrey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightgrey, grey, lightgrey); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightgrey, grey, lightgrey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightgrey, grey, lightgrey); /* Standard syntax (must be last) */
+}
+#grad3 {
+    min-height: 200px;
+    border: 1px solid lightgrey;
+    background: lightgrey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(lightgrey, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(lightgrey, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(lightgrey, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(lightgrey, white); /* Standard syntax (must be last) */
+}
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .row.content {height: 450px;}
+
+    .navbar li {
+    	 font-size: 20px;
+    }
+    .navbar img {
+    	 width: 40%;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+      .navbar li {
+      	font-size: 10px;
+      	float: right;
+      }
+      .navbar img {width: 100%;}
+    }

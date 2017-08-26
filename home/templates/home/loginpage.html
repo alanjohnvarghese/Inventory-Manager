@@ -1,11 +1,35 @@
-<style>
-table, th, td {
-    border: 1px solid black;
-}
-</style>
-<center><h1>{{u|title}}</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<p>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="cssloginpage.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+  <title>Centre For Innovation</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <img src="header51.png">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2" style="visibility: hidden"></div>
+    <div class="col-sm-8 text-left" style="border: 1px solid grey; top: 10%; background: #00e6e6; padding-bottom: 20px;"> 
+<center><h1>{{u|title}}</h1><br>
+
+<div id="grad1">
 {% if tu %}
 The following are the tools taken by {{u|title}}
 <ul>{% for i in tu%}
@@ -15,10 +39,10 @@ The following are the tools taken by {{u|title}}
 {% else %}
 You haven't take any tools currently
 {% endif %}
-</p>
+</div>
 
 <br>
-<p>
+<div id="grad2">
 {% if to %}
 The following are the tools taken by other users
 <table style ="width:40%">
@@ -36,11 +60,11 @@ The following are the tools taken by other users
 {% else %}
 No one has taken any tools currently
 {% endif %}
-</p>
+</div>
 
 <br>
 
-<p>
+<div id="grad3">
 {% if ta %}
 The following are the tools available now
 <ul>{% for i in ta%}
@@ -50,10 +74,11 @@ The following are the tools available now
 {% else %}
 No tools are available now
 {% endif %}
-</p>
+</div>
+    </div>
+    <div class="col-sm-2" style="visibility: hidden"></div>
+  </div>
+</div>
 
-
-</center>
-
-<a href='../'>Log Out</a>
- 
+</body>
+</html>
